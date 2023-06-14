@@ -1,8 +1,8 @@
 import React from "react";
-import styles from "event-list.module.css";
+import styles from "./event-list.module.css";
 import EventItem from "./event-item";
 
-const EventLinst = (props) => {
+const Eventlist = (props) => {
   return (
     <ul className={styles.list}>
       {props.items.map((event) => (
@@ -19,4 +19,4 @@ const EventLinst = (props) => {
   );
 };
 
-export default EventLinst;
+export default Eventlist;
