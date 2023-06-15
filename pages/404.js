@@ -1,7 +1,19 @@
-import React from "react";
+import Link from "next/link";
+import styles from "./404.module.css";
 
-const page404 = () => {
-  return <p>404 error, page not found</p>;
+const Custom404 = () => {
+  return (
+    <div className={styles.container}>
+      <h1 className={styles.title}>Oops! Page not found</h1>
+      <p className={styles.description}>
+        The page you are looking for might have been removed or is temporarily
+        unavailable.
+      </p>
+      <Link href="/" className={styles.link}>
+        Go back to home
+      </Link>
+    </div>
+  );
 };
 
-export default page404;
+export default Custom404;
