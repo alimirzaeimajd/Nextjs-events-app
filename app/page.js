@@ -1,4 +1,3 @@
-import Navbar from "@/components/Navbar";
 import { getFeaturedEvents } from "../dummy-data";
 import Eventlist from "@/components/events/event-list";
 
@@ -7,7 +6,6 @@ export default function Home() {
 
   return (
     <>
-      <Navbar />
       <Eventlist items={FeaturedEvents} />
     </>
   );

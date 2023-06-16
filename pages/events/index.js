@@ -6,6 +6,7 @@ import { useRouter } from "next/router";
 
 function events() {
   const events = getAllEvents();
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const router = useRouter();
   function findEventsHandler(year, month) {
     const fullpath = `/events/${year}/${month}`;
